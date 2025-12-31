@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafif Ahmad Yudhistira | Game Developer</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Lionz<span class="accent">-IT</span></div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Tech Stack</a></li>
+            <li><a href="#portfolio">Games</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="btn-resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content">
+            <img src="assets/profile.jpg" alt="Foto Rafif" class="profile-pic">
+            <h1>Hi, I'm <span class="typing-text"></span><span class="cursor">|</span></h1>
+            <p>Indie Game Developer & Gameplay Programmer</p>
+            <p class="sub-hero">Menciptakan pengalaman bermain yang unik dan imersif.</p>
+            <div class="buttons">
+                <a href="#portfolio" class="btn-primary">Lihat Game Saya</a>
+                <a href="https://github.com/Lionz-IT" target="_blank" class="btn-secondary">GitHub Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <div class="about-content hidden" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <p>Saya seorang developer game dengan fokus utama pada <strong>Unity</strong>. Saya menyukai tantangan dalam merancang mekanik gameplay yang inovatif dan mengoptimalkan performa game.</p>
+            <br>
+            <p>🌱 Saat ini sedang mendalami topik game development lebih lanjut.<br>
+            🎮 Hobi saya tentu saja bermain dan membedah game.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Tech Stack</h2>
+        
+        <div class="scroller" data-speed="fast">
+            <ul class="tag-list scroller__inner">
+                <li style="--color: #ffffff;"><i class="devicon-unity-original"></i> Unity</li>
+                <li style="--color: #ffffff;"><i class="devicon-unrealengine-original"></i> Unreal</li>
+                <li style="--color: #478cbf;"><i class="devicon-godot-plain"></i> Godot</li>
+                <li style="--color: #9b4f96;"><i class="devicon-csharp-plain"></i> C#</li>
+                <li style="--color: #00599C;"><i class="devicon-cplusplus-plain"></i> C++</li>
+                <li style="--color: #356691;"><i class="devicon-godot-plain"></i> GDScript</li> 
+                <li style="--color: #3776ab;"><i class="devicon-python-plain"></i> Python</li>
+                
+                <li style="--color: #ffffff;"><i class="devicon-unity-original"></i> Unity</li>
+                <li style="--color: #ffffff;"><i class="devicon-unrealengine-original"></i> Unreal</li>
+                <li style="--color: #478cbf;"><i class="devicon-godot-plain"></i> Godot</li>
+                <li style="--color: #9b4f96;"><i class="devicon-csharp-plain"></i> C#</li>
+                <li style="--color: #00599C;"><i class="devicon-cplusplus-plain"></i> C++</li>
+                <li style="--color: #356691;"><i class="devicon-godot-plain"></i> GDScript</li>
+                <li style="--color: #3776ab;"><i class="devicon-python-plain"></i> Python</li>
+            </ul>
+        </div>
+
+        <div class="scroller" data-direction="right" data-speed="slow">
+            <ul class="tag-list scroller__inner">
+                <li style="--color: #F05032;"><i class="devicon-git-plain"></i> Git</li>
+                <li style="--color: #ffffff;"><i class="devicon-github-original"></i> GitHub</li>
+                <li style="--color: #F5792A;"><i class="devicon-blender-original"></i> Blender</li>
+                <li style="--color: #0052CC;"><i class="devicon-trello-plain"></i> Trello</li>
+                <li style="--color: #007ACC;"><i class="devicon-vscode-plain"></i> VS Code</li>
+                <li style="--color: #7D929E;">Aseprite</li> 
+                <li style="--color: #ffffff;">Notion</li>
+
+                <li style="--color: #F05032;"><i class="devicon-git-plain"></i> Git</li>
+                <li style="--color: #ffffff;"><i class="devicon-github-original"></i> GitHub</li>
+                <li style="--color: #F5792A;"><i class="devicon-blender-original"></i> Blender</li>
+                <li style="--color: #0052CC;"><i class="devicon-trello-plain"></i> Trello</li>
+                <li style="--color: #007ACC;"><i class="devicon-vscode-plain"></i> VS Code</li>
+                <li style="--color: #7D929E;">Aseprite</li>
+                <li style="--color: #ffffff;">Notion</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Proyek Unggulan</h2>
+        <div class="project-grid">
+            
+            <div class="project-card hidden">
+                <div class="card-image">
+                    <img src="assets/game1.png" alt="Screenshot Game 1">
+                </div>
+                <div class="card-info">
+                    <h3>Flappy Bird</h3>
+                    <p class="tech-tag">Unity • C#</p>
+                    <p>Flappy Bird menggunakan jaringan Q mendalam untuk melatih agen AI (Flappy Bird) melalui pembelajaran penguatan . Agen tersebut menganalisis lingkungan permainan seperti jarak antara pipa dan lintasan, kemudian membuat keputusan apakah akan mengepakkan sayapnya atau tidak.</p>
+                    <a href="#" class="btn-small">Mainkan di Itch.io</a>
+                </div>
+            </div>
+
+            <div class="project-card hidden">
+                <div class="card-image">
+                     <img src="assets/game2.png" alt="Screenshot Game 2">
+                </div>
+                <div class="card-info">
+                    <h3>Squid Game RLGL</h3>
+                    <p class="tech-tag">Unity • C#</p>
+                    <p>Red Light Green Light adalah salah satu game yang muncul di drakor Squid Game (2021). Inti dari permainan ini adalah, para pemain harus berjalan hingga garis finish saat boneka Young Hee sedang menghadap pohon.</p>
+                    <a href="#" class="btn-small">Mainkan di Itch.io</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="tools">
+        <h2>Tools & Open Source</h2>
+        <div class="project-grid">
+            
+            <div class="project-card hidden">
+                <div class="card-image tool-bg">
+                    <span class="code-icon">&lt;/&gt;</span>
+                </div>
+                <div class="card-info">
+                    <h3>Simple FPS Controller</h3>
+                    <p class="tech-tag">C# • Unity Physics</p>
+                    <p>Script controller karakter First Person sederhana dengan fitur Movement, Jump, dan Crouch.</p>
+                    <a href="https://github.com/Lionz-IT" target="_blank" class="btn-small">Lihat Kode di GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card hidden">
+                <div class="card-image tool-bg">
+                    <span class="code-icon">{ }</span>
+                </div>
+                <div class="card-info">
+                    <h3>Unity State Machine</h3>
+                    <p class="tech-tag">C# • Design Pattern</p>
+                    <p>Kerangka dasar (Boilerplate) untuk mengatur State musuh (Idle, Chase, Attack) menggunakan C#.</p>
+                    <a href="https://github.com/Lionz-IT" target="_blank" class="btn-small">Lihat Kode di GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card hidden">
+                <div class="card-image tool-bg">
+                    <span class="code-icon">#</span>
+                </div>
+                <div class="card-info">
+                    <h3>2D Grid System</h3>
+                    <p class="tech-tag">C# • Tilemap</p>
+                    <p>Sistem grid generator otomatis untuk game strategi atau turn-based tactical.</p>
+                    <a href="https://github.com/Lionz-IT" target="_blank" class="btn-small">Lihat Kode di GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Hubungi Saya</h2>
+        <div class="contact-content hidden">
+            <p>Tertarik kolaborasi membuat game? Kirimkan pesan!</p>
+            <a href="mailto:raymlg2005@gmail.com" class="email-link">raymlg2005@gmail.com</a>
+            
+            <div class="socials">
+                <a href="https://github.com/Lionz-IT" target="_blank" title="GitHub">
+                    <i class="devicon-github-original"></i>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/rafif-ahmad-yudhistira-04836331b" target="_blank" title="LinkedIn">
+                    <i class="devicon-linkedin-plain"></i>
+                </a>
+
+                <a href="https://www.roblox.com/users/5402272324/profile" target="_blank" title="Roblox">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.23 0L24 5.765L18.784 24L0 18.25L5.23 0ZM9.673 8.358L8.12 13.804L13.565 15.358L15.12 9.91L9.673 8.358Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rafif Ahmad Yudhistira. Built for Players.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
